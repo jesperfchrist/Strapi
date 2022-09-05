@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_categories",
+  "info": {
+    "singularName": "image-category",
+    "pluralName": "image-categories",
+    "displayName": "image_category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image_blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::image.image",
+      "mappedBy": "image_category"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
